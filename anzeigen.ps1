@@ -1,10 +1,12 @@
 $folderPath = "Q:\AppTesting\QFTestFrameWork\QFTestDriver\Syrius\CEN_UNI"
+$standardPath = "Q:\AppTesting\QFTestFrameWork\QFTestDriver\Syrius\CEN_UNI"
+$vorlagedatei = "C:\Temp"
 $selection = $null
 
 function showmenu {
   Clear-Host
   Write-Host "=== Vergleichs Tool ==="
-  Write-Host "1. Option 1"
+  Write-Host "1. Infos"
   Write-Host "2. Option 2"
   Write-Host "3. Durchsuchen und Datei auswaehlen"
   Write-Host "4. Beenden"
@@ -72,11 +74,14 @@ while ($selection -ne "4") {
 
   switch ($selection) {
     "1" {
-      Write-Host "Option 1 ausgewaehlt"
+      Clear-Host
+      Write-Host "Zu Ueberpruefende Datei:      $vorlagedatei"
+      Write-Host "Ausgewaehlte Datei:           $folderpath"
+      Write-Host "Gesamter Pfad:                $standardPath"
       Read-Host "Druecken Sie eine beliebige Taste, um fortzufahren..."
     }
     "2" {
-      Write-Host "Option 2 ausgewaehlt"
+      Write-Host "Durchsuchen"
       Read-Host "Druecken Sie eine beliebige Taste, um fortzufahren..."
     }
     "3" {
