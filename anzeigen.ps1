@@ -81,7 +81,7 @@ while ($selection -ne "4") {
       Read-Host "Druecken Sie eine beliebige Taste, um fortzufahren..."
     }
     "2" {
-      Write-Host "Option 2 ausgewaehlt"
+      Write-Host "Durchsuchen"
       Read-Host "Druecken Sie eine beliebige Taste, um fortzufahren..."
     }
     "3" {
